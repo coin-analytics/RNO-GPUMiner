@@ -1,0 +1,13 @@
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\bin\Debug\rnocoinminer.exe
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\bin\Debug\rnocoinminer.pdb
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\rnocoinminer.csprojAssemblyReference.cache
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\coinminner.CoinMinner.resources
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\coinminner.Minner.resources
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\coinminner.Properties.Resources.resources
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\coinminner.transaction.resources
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\rnocoinminer.csproj.GenerateResource.cache
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\rnocoinminer.csproj.CoreCompileInputs.cache
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\rnocoinminer.csproj.CopyComplete
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\rnocoinminer.exe
+C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\rnocoinminer.pdb
