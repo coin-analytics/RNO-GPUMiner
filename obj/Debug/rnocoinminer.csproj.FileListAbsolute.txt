@@ -11,3 +11,16 @@ C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\ob
 C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\rnocoinminer.csproj.CopyComplete
 C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\rnocoinminer.exe
 C:\Users\차의서\Desktop\HACKRNO\DotPeek_HACKRNO\2019-04-29_v2\rnocoinminer\obj\Debug\rnocoinminer.pdb
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\obj\Debug\coinminner.CoinMinner.resources
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\obj\Debug\coinminner.Minner.resources
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\obj\Debug\coinminner.Properties.Resources.resources
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\obj\Debug\coinminner.transaction.resources
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\obj\Debug\rnocoinminer.csproj.GenerateResource.cache
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\obj\Debug\rnocoinminer.csproj.CoreCompileInputs.cache
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\obj\Debug\rnocoinminer.exe
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\obj\Debug\rnocoinminer.pdb
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\bin\Debug\rnocoinminer.exe
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\bin\Debug\rnocoinminer.pdb
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kimuj\Source\Repos\RNO_GPU-Miner_Coin Analytics\obj\Debug\rnocoinminer.csproj.CopyComplete
+C:\Users\kimuj\source\repos\RNO_GPU-Miner_Coin Analytics\obj\Debug\rnocoinminer.csprojAssemblyReference.cache

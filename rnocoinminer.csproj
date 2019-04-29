@@ -31,6 +31,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Drawing" />
@@ -59,6 +60,15 @@
     <EmbeddedResource Include="Minner.resx" />
     <EmbeddedResource Include="Properties\Resources.resx" />
     <EmbeddedResource Include="transaction.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dllsha256\dllsha256\dllsha256.vcxproj">
+      <Project>{1f6ce899-10f3-4856-82cb-6eb0d888981f}</Project>
+      <Name>dllsha256</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
