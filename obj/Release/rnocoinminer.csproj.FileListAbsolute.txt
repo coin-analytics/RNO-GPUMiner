@@ -1,0 +1,13 @@
+C:\RNO\RNO_GPU-Miner_Coin Analytics\bin\Release\rnocoinminer.exe
+C:\RNO\RNO_GPU-Miner_Coin Analytics\bin\Release\rnocoinminer.pdb
+C:\RNO\RNO_GPU-Miner_Coin Analytics\bin\Release\Newtonsoft.Json.dll
+C:\RNO\RNO_GPU-Miner_Coin Analytics\obj\Release\rnocoinminer.csprojAssemblyReference.cache
+C:\RNO\RNO_GPU-Miner_Coin Analytics\obj\Release\coinminner.CoinMinner.resources
+C:\RNO\RNO_GPU-Miner_Coin Analytics\obj\Release\coinminner.Minner.resources
+C:\RNO\RNO_GPU-Miner_Coin Analytics\obj\Release\coinminner.Properties.Resources.resources
+C:\RNO\RNO_GPU-Miner_Coin Analytics\obj\Release\coinminner.transaction.resources
+C:\RNO\RNO_GPU-Miner_Coin Analytics\obj\Release\rnocoinminer.csproj.GenerateResource.cache
+C:\RNO\RNO_GPU-Miner_Coin Analytics\obj\Release\rnocoinminer.csproj.CoreCompileInputs.cache
+C:\RNO\RNO_GPU-Miner_Coin Analytics\obj\Release\rnocoinminer.csproj.CopyComplete
+C:\RNO\RNO_GPU-Miner_Coin Analytics\obj\Release\rnocoinminer.exe
+C:\RNO\RNO_GPU-Miner_Coin Analytics\obj\Release\rnocoinminer.pdb
