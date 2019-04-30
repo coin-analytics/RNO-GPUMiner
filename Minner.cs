@@ -79,6 +79,16 @@ namespace coinminner
                 this.ProcessCountBox.Items.Add((object)index);
             this.ProcessCountBox.SelectedIndex = this.cpuCount - 1;
             this.setMinner();
+
+            // Try to initialize OpenCL Device
+            try
+            {
+                sha256_init(2048);
+            } catch (Exception ex)
+            {
+                MessageBox.Show("그래픽 드라이버를 초기화하는 중 오류가 발생하였습니다.");
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void setMinner()
@@ -173,9 +183,6 @@ namespace coinminner
 
         public void mining()
         {
-            sha256_init(2048);
-
-
             while (this.threadState == 1)
             {
                 if (this.runMinner != 1)
