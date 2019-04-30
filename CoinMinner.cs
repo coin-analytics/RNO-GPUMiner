@@ -3,6 +3,7 @@
 // Assembly: rnocoinminer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 // MVID: D88D9D4B-A690-412D-B858-EE24C0C62E1A
 // Assembly location: C:\Program Files (x86)\RNO\RnoMiner(Beta)\rnocoinminer.exe
+#define _DEBUG
 
 
 using coinminner.Properties;

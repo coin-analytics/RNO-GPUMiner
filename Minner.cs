@@ -4,7 +4,6 @@
 // MVID: D88D9D4B-A690-412D-B858-EE24C0C62E1A
 // Assembly location: C:\Program Files (x86)\RNO\RnoMiner(Beta)\rnocoinminer.exe
 
-
 using coinminner.Properties;
 using Newtonsoft.Json.Linq;
 using System;
@@ -67,7 +66,7 @@ namespace coinminner
         private Label label7;
         //[DllImport("dllsha256.dll", CallingConvention = CallingConvention.Cdecl)]
         [DllImport("SHA256.dll", CallingConvention = CallingConvention.Cdecl)]
-        unsafe extern public static System.IntPtr sha256_crypt(string input);
+        extern public static IntPtr sha256_crypt(string input);
 
         [DllImport("SHA256.dll", CallingConvention = CallingConvention.Cdecl)]
         extern public static void sha256_init(int user_kpc);
@@ -95,9 +94,6 @@ namespace coinminner
 
         public void setMinner()
         {
-#if DEBUG
-            Console.WriteLine("Setting Miner");
-#endif
             try
             {
                 StringBuilder stringBuilder = new StringBuilder();
@@ -168,36 +164,21 @@ namespace coinminner
 
         public string SHA256Hash(string data)
         {
-            //byte[] hash = new SHA256Managed().ComputeHash(Encoding.ASCII.GetBytes(data));
-            //string output = null;
-            // string result = "";
-            unsafe
+            string text = "";
+            StringBuilder stringBuilder = new StringBuilder();
+            try
             {
-                IntPtr output;
-                string result = "";
-                StringBuilder stringBuilder = new StringBuilder();
-
-                try
+                text = Marshal.PtrToStringAnsi(Minner.sha256_crypt(data));
+                foreach (byte b in Encoding.ASCII.GetBytes(text))
                 {
-                    output = sha256_crypt(data);
-#if DEBUG
-                    // Console.WriteLine("Len {0}", output.Size);
-#endif
-                    // string result = Marshal.PtrToStringAnsi(output);
-                    result = Marshal.PtrToStringAnsi(output);
-                    byte[] hash = Encoding.ASCII.GetBytes(result);
-
-                    foreach (byte num in hash)
-                        stringBuilder.AppendFormat("{0:x2}", (object)num);
+                    stringBuilder.AppendFormat("{0:x2}", b);
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
-                //return stringBuilder.ToString();
-                return result;
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return text;
         }
 
         public void runC()
@@ -220,9 +201,6 @@ namespace coinminner
                     string nBitsStr = this.nBitsStr;
                     string hashText = this.hashText;
                     string str = this.SHA256Hash(hashText + (object)nonce);
-#if DEBUG
-                    Console.WriteLine("Input {0} | Output {1}", hashText + nonce, str);
-#endif
                     if (str.StartsWith(nBitsStr))
                     {
                         this.runMinner = 0;
@@ -267,17 +245,11 @@ namespace coinminner
 
         private void button1_Click(object sender, EventArgs e)
         {
-            #if DEBUG
-            Console.WriteLine("button1_Clicked");
-            #endif
             this.threadState = 1;
             this.runcState = 1;
             this.ProcessCountBox.Enabled = false;
             this.button1.Visible = false;
             this.button3.Visible = true;
-#if DEBUG
-            Console.WriteLine("Button1 -> resetMiner");
-#endif
             this.resetMinner();
             this.runMinner = 1;
             int length = 0;
@@ -285,9 +257,6 @@ namespace coinminner
             if (num >= 2)
                 length = num;
             this.runThread = new Thread[length];
-#if DEBUG
-            Console.WriteLine("Thread count: {0}", length);
-#endif
             for (int index = 0; index < length; ++index)
             {
                 this.runThread[index] = new Thread(new ThreadStart(this.runC));
@@ -298,9 +267,6 @@ namespace coinminner
 
         public void threadUp()
         {
-#if DEBUG
-            Console.WriteLine("Calling thread up");
-#endif
             this.runMinner = 1;
             int length = int.Parse(this.ProcessCountBox.SelectedItem.ToString());
             this.syncThread = new Thread[length];
@@ -315,9 +281,6 @@ namespace coinminner
 
         public void resetMinner()
         {
-#if DEBUG
-            Console.WriteLine("Resetting Miner");
-#endif
             this.runMinner = 0;
             this.setMinner();
             this.threadUp();
