@@ -65,10 +65,10 @@ namespace coinminner
         private PictureBox pictureBox1;
         private Label label7;
         //[DllImport("dllsha256.dll", CallingConvention = CallingConvention.Cdecl)]
-        [DllImport("dllsha256.dll", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("SHA256.dll", CallingConvention = CallingConvention.Cdecl)]
         extern public static void sha256_crypt(string input, string output);
 
-        [DllImport("dllsha256.dll", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("SHA256.dll", CallingConvention = CallingConvention.Cdecl)]
         extern public static void sha256_init(int user_kpc);
         public Minner(string miningWallet, string initData)
         {
