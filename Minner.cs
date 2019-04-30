@@ -88,6 +88,7 @@ namespace coinminner
             {
                 MessageBox.Show("그래픽 드라이버를 초기화하는 중 오류가 발생하였습니다.");
                 MessageBox.Show(ex.Message);
+                throw ex;       // OpenCL Device를 Init하는데 실패하는 것은 큰 오류이기 때문에 throw함.
             }
         }
 
